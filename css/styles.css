@@ -1,0 +1,106 @@
+body{
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-weight: lighter;
+  color: #161615;
+}
+
+header{
+  background: #161615;
+  color: #f4f4f4;
+  text-align: center;
+  padding-top: 64px;
+}
+
+header h1,
+header p {
+  margin: 0;
+}
+
+.flex_box {
+   background-color: #161615;
+   padding:10px;
+   display:flex;
+   justify-content:flpace-around;
+   flex-wrap: wrap;
+   &:before{
+     content:"";
+     display:block;
+     width: 150px;
+     height:0;
+     order:1;
+   }
+   &:after{
+     content:"";
+     display:block;
+     width: 150px;
+     height:0;
+   }
+
+}
+
+
+.flex_item {
+  padding:10px;
+  margin-bottom:10px;
+  /* width:200px; */
+  box-sizing: content-box;
+  width: 200px;
+  text-align:  center;
+  align-self: stretch;
+}
+
+.flex_item h2,p{
+  font-size:  12px; 
+  color:  #fff; 
+  font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-weight: lighter; 
+}
+
+.flex_item:nth-child(1) {
+  /* background-color:  #2196F3; 背景色指定 */
+}
+
+.flex_item:nth-child(2) {
+  /* background-color:  #4CAF50; 背景色指定 */
+}
+
+.flex_item:nth-child(3) {
+  /* background-color: #3F51B5; 背景色指定 */
+}
+
+.flex_item:nth-child(4) {
+  /* background-color:  #00BCD4; 背景色指定 */
+}
+
+.flex_item:nth-child(5) {
+  /* background-color:  #00BCD4; 背景色指定 */
+}
+
+.flex_item:nth-child(6) {
+  /* background-color:  #00BCD4; 背景色指定 */
+}
+
+.flex_item:nth-child(7) {
+  /* background-color:  #00BCD4; 背景色指定 */
+}
+
+.flex_item:nth-child(8) {
+  /* background-color:  #00BCD4; 背景色指定 */
+}
+
+.flex_box img{
+  display: block;
+	margin-bottom: 10px; 
+	width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+footer{
+  padding: 64px 0;
+  background: #323135;
+  color: #98969c;
+  text-align: center;
+}
